@@ -3,12 +3,12 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 :root {
     --color-1: #2a3a2f;
-    --color-2: #325d41;
+    --color-2: #0e7c4e;
     --color-3: #b48126;
     --color-4: #8c3e0d;
 }
@@ -41,13 +41,13 @@ nav a {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 18px 10px;
+    padding: 20px 15px;
 }
 
 #hero {
     background: url('./images/hero-background.jpg');
     color: white;
-    height: 500px;
+    height: 400px;
     position: relative;
 }
 
@@ -58,23 +58,164 @@ nav a {
     transform: translate(-50%, -50%);
     text-align: center;
     max-width: 510px;
+    min-width: 300px;
 }
 
 h1 {
-    font-size: clamp(1.8em, 5vw, 50px);
+    font-size: clamp(1.5em, 4vw, 48px);
 }
 
 .hero-content p {
-    font-size: clamp(1em, 3vw, 18px);
+    font-size: clamp(1em, 2vw, 18px);
 }
 
 button {
     color: var(--color-1);
     background-color: rgba(7, 94, 14, 0.459);
     padding: 8px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 5px;
     font-family: Georgia;
     cursor: pointer;
     color: white;
+    border: 1px solid white;
+}
+
+#products {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--color-1);
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#products h2 {
+    font-size: clamp(1.2em, 3vw, 32px);
+}
+
+.product {
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-1);
+    font-weight: 600;
+}
+
+.product-pic {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#quote {
+    background: url('./images/cta-background.jpg');
+    background-position: top;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 24px;
+}
+
+blockquote {
+    background: rgba(7, 37, 17, 0.5);
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 7px;
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
+    text-align-last: center;
+}
+
+#call-to-action {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-1);
+    color: white;
+    padding: 0 150px;
+}
+
+#call-to-action button {
+    display: block;
+    align-self: center;
+    background: transparent;
+}
+
+footer {
+    background-color: var(--color-2);
+    height: 20px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width:600px) {
+    nav .logo {
+        font-size: 24px;
+        padding: 30px 10px;
+    }   
+    nav a {
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #products {
+        height: auto;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .products {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .product {
+        width: 80%;
+        height: 300px;
+        margin: 0 auto 30px;
+    }
+    .product-pic {
+        height: 90%;
+    }
+
+    #quote {
+        padding: 30px;
+    }
+    blockquote {
+        min-width: 80%;
+        max-width: 90%;
+        font-size: 18px;
+    }
+    #call-to-action {
+        padding: 5px;
+    }
+    .cta-content h3 {
+        font-size: 14px;
+    }
+    .cta-content p {
+        font-size: 12px;
+    }
+    #call-to-action button {
+        font-size: 12px;
+    }
+    footer {
+        font-size: 10px;
+        height: 14px;
+    }
 }
