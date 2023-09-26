@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+:root {
+    --color-1: #2a3a2f;
+    --color-2: #325d41;
+    --color-3: #b48126;
+    --color-4: #8c3e0d;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: var(--color-2);
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 5px;
+    overflow-y: hidden;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 32px;
+    font-family: 'Croissant One',sans;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 18px 10px;
+}
+
+#hero {
+    background: url('./images/hero-background.jpg');
+    color: white;
+    height: 500px;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 510px;
+}
+
+h1 {
+    font-size: clamp(1.8em, 5vw, 50px);
+}
+
+.hero-content p {
+    font-size: clamp(1em, 3vw, 18px);
+}
+
+button {
+    color: var(--color-1);
+    background-color: rgba(7, 94, 14, 0.459);
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: Georgia;
+    cursor: pointer;
+    color: white;
+}
