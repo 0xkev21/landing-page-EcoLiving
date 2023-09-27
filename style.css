@@ -159,7 +159,7 @@ blockquote {
 
 footer {
     background-color: var(--color-2);
-    height: 20px;
+    height: 40px;
     font-size: 14px;
     color: white;
     display: flex;
@@ -218,7 +218,7 @@ footer {
     }
     footer {
         font-size: 10px;
-        height: 14px;
+        height: 30px;
     }
 }
 
