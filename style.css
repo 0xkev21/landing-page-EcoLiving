@@ -11,6 +11,7 @@
     --color-2: #0e7c4e;
     --color-3: #b48126;
     --color-4: #8c3e0d;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +26,7 @@ nav {
     height: 50px;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px 5px;
+    padding: 30px 0;
     overflow-y: hidden;
 }
 
@@ -46,6 +47,7 @@ nav a {
 
 #hero {
     background: url('./images/hero-background.jpg');
+    background-attachment: fixed;
     color: white;
     height: 400px;
     position: relative;
@@ -119,7 +121,8 @@ button {
 
 #quote {
     background: url('./images/cta-background.jpg');
-    background-position: top;
+    background-attachment: fixed;
+    background-position: 0 20%;
     background-size: cover;
     color: white;
     padding: 100px;
@@ -152,7 +155,6 @@ blockquote {
 #call-to-action button {
     display: block;
     align-self: center;
-    background: transparent;
 }
 
 footer {
@@ -173,7 +175,7 @@ footer {
     nav a {
         font-size: 14px;
         padding-left: 5px;
-        padding-right: 5px;
+        padding-right: 10px;
     }
     #products {
         height: auto;
@@ -218,4 +220,26 @@ footer {
         font-size: 10px;
         height: 14px;
     }
+}
+
+.logo:hover , nav a:hover {
+    background-color: var(--color-1);
+}
+.logo, nav a {
+    transition: background-color 250ms ease;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--color-1);
+}
+button {
+    transition: all 250ms ease;
+}
+
+.product:hover, .product:focus {
+    transform: translate(0, -10px) scale(1.03);
+}
+.product {
+    transition: transform 250ms ease;
 }
