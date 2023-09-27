@@ -23,11 +23,18 @@ nav {
     background-color: var(--color-2);
     color: white;
     display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
     height: 50px;
     align-items: center;
     justify-content: flex-end;
     padding: 30px 0;
     overflow-y: hidden;
+}
+main {
+    margin-top: 50px;
 }
 
 .logo {
@@ -174,8 +181,7 @@ footer {
     }   
     nav a {
         font-size: 14px;
-        padding-left: 5px;
-        padding-right: 10px;
+        padding: 40px 10px;
     }
     #products {
         height: auto;
@@ -198,6 +204,7 @@ footer {
 
     #quote {
         padding: 30px;
+        background-attachment: initial;
     }
     blockquote {
         min-width: 80%;
