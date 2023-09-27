@@ -43,6 +43,8 @@ main {
     font-family: 'Croissant One',sans;
     cursor: pointer;
     padding: 10px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 nav a {
